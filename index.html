@@ -6,217 +6,263 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid</title>
     <link rel="stylesheet" href="styles.css" />
-</head>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Anton&family=Edu+QLD+Beginner:wght@400..700&family=Exile&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Reddit+Sans+Condensed:wght@200..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Edu+QLD+Beginner:wght@400..700&family=Exile&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Reddit+Sans+Condensed:wght@200..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
 
 <body>
     <div class="container">
-        <div class="sidebar">
-            <div class="dashboard-image">
-                <img src="images/menu.svg" alt="Menu image" width="100" height="50">
-            </div>
-            <div class="dashboard">Dashboard</div>
-
-            <div class="menu1">
-                <div class="menu-image"></div>
-                <img src="images/home.svg" alt="Home image" width="50" height="25">
-                <div class="menu-items">Home</div>
+        <aside class="sidebar">
+            <div class="dashboard">
+                <img src="images/menu.svg" alt="Menu icon" width="30" height="30" />
+                <span>Dashboard</span>
             </div>
 
             <div class="menu1">
-                <div class="menu-image"></div>
-                <img src="images/profile.svg" alt="Profile image" width="50" height="25">
-                <div class="menu-items">Profile</div>
+                <img src="images/home.svg" alt="Home image" width="50" height="25" />
+                <div>Home</div>
             </div>
 
             <div class="menu1">
-                <div class="menu-image"></div>
-                <img src="images/messages.svg" alt="Messages image" width="50" height="25">
-                <div class="menu-items">Messages</div>
+                <img src="images/profile.svg" alt="Profile image" width="50" height="25" />
+                <div>Profile</div>
             </div>
 
             <div class="menu1">
-                <div class="menu-image"></div>
-                <img src="images/history.svg" alt="History image" width="50" height="25">
-                <div class="menu-items">History</div>
+                <img src="images/messages.svg" alt="Messages image" width="50" height="25" />
+                <div>Messages</div>
             </div>
 
             <div class="menu1">
-                <div class="menu-image"></div>
-                <img src="images/tasks.svg" alt="Tasks image" width="50" height="25">
-                <div class="menu-items">Tasks</div>
+                <img src="images/history.svg" alt="History image" width="50" height="25" />
+                <div>History</div>
             </div>
 
             <div class="menu1">
-                <div class="menu-image"></div>
-                <img src="images/community.svg" alt="Community image" width="50" height="25">
-                <div class="menu-items">Community</div>
+                <img src="images/tasks.svg" alt="Tasks image" width="50" height="25" />
+                <div>Tasks</div>
+            </div>
+
+            <div class="menu1">
+                <img src="images/community.svg" alt="Community image" width="50" height="25" />
+                <div>Community</div>
+            </div>
+
+            <div class="menu2 settings-menu">
+                <img src="images/settings.svg" alt="Settings image" width="50" height="25" />
+                <div>Settings</div>
             </div>
 
             <div class="menu2">
-                <div class="menu-image"></div>
-                <img src="images/settings.svg" alt="Settings image" width="50" height="25">
-                <div class="menu-items">Settings</div>
+                <img src="images/support.svg" alt="Support image" width="50" height="25" />
+                <div>Support</div>
             </div>
 
             <div class="menu2">
-                <div class="menu-image"></div>
-                <img src="images/support.svg" alt="Support image" width="50" height="25">
-                <div class="menu-items">Support</div>
+                <img src="images/privacy.svg" alt="Privacy image" width="50" height="25" />
+                <div>Privacy</div>
             </div>
+        </aside>
 
-            <div class="menu2">
-                <div class="menu-image"></div>
-                <img src="images/privacy.svg" alt="Privacy image" width="50" height="25">
-                <div class="menu-items">Privacy</div>
-            </div>
+        <main class="main-content">
+            <div class="header">
 
-        </div>
+                <!-- Using grid container for the whole header area -->
+                <div class="header-grid">
 
-        <div class="header">
-            <div class="searchbar-image">
-                <img src="images/search.svg" alt="Seach image" width="50" height="25">
-            </div>
-            <div class="searchbar"></div>
-            <div class="form">
-                <label for="searchbar"></label>
-                <input id="searchbar" name="searchbar" type="text" required minlength="3" maxlength="100"
-                    pattern="[A-Za-z]+">
-            </div>
+                    <!-- First column: Search icon and input -->
+                    <div class="searchbar">
+                        <img src="images/search.svg" alt="Search image" width="30" height="30" />
+                        <input id="searchbar" name="searchbar" type="text" maxlength="100" placeholder="Search..." />
+                    </div>
 
-            <div class="notification-image">
-                <img src="images/notifications.svg" alt="Bell image" width="50" height="25">
-            </div>
+                    <!-- Second column: notification, name-image, name1 -->
+                    <div class="right-top">
+                        <div class="notification-image">
+                            <img src="images/notifications.svg" alt="Bell image" width="30" height="30" />
+                        </div>
+                        <div class="name-image">
+                            <img src="images/dog.svg" alt="Dog image" width="80" height="60" />
+                        </div>
+                        <div class="name1">Sherley Sosa</div>
+                    </div>
 
-            <div class="name-image">
-                <img src="images/dog.svg" alt="Dog image" width="65" height="50">
-            </div>
-            <div class="name1">Sherley Sosa</div>
+                    <!-- Row 2: image + text side by side -->
+                    <div class="name2-block">
+                        <div class="name2-image">
+                            <img src="images/dog.svg" alt="Dog image" width="85" height="80" />
+                        </div>
+                        <div class="name2-text">
+                            <div class="greeting">Hi there,</div>
+                            <div class="information">Sherley Sosa (@sosa)</div>
+                        </div>
+                    </div>
 
-            <div class="name2">
-                <img src="images/dog.svg" alt="Dog image" width="85" height="80">
-                <div class="greeting">Hi there,</div>
-                <div class="information">Sherley Sosa (@sosa)</div>
-            </div>
+                    <!-- Under right-top (spanning second column): menu3 -->
+                    <div class="menu3">
+                        <ul>
+                            <li><button type="button">New</button></li>
+                            <li><button type="button">Upload</button></li>
+                            <li><button type="button">Share</button></li>
+                        </ul>
+                    </div>
 
-            <div class="menu3">
-                <ul>
-                    <li><input type="submit" value="New"></li>
-                    <li><input type="submit" value="Upload"></li>
-                    <li><input type="submit" value="Share"></li>
-                </ul>
-            </div>
-        </div>
+                </div> <!-- closes header-grid -->
 
-        <div class="projects">
-            <div class="titles">Your Projects</div>
-            <div class="card">
-                <p class="project-name">Super Cool Project</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                <img src="images/star-plus.svg" alt="Star Plus image" width="50" height="25">
-                <img src="images/eye-plus.svg" alt="Eye Plus image" width="50" height="25">
-                <img src="images/gamma.svg" alt="Gamma image" width="50" height="25">
-            </div>
+                <div class="dashboard-content">
+                    <div class="title">Your Projects</div>
+                    <div class="title"> Announcements</div>
+                    <div class="cards-wrapper1">
+                        <div class="cards-left">
+                            <div class="project-card">
+                                <p class="project-name">Super Control Projects</p>
+                                <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <div class="icons">
+                                    <img src="images/star-plus.svg" width="30" />
+                                    <img src="images/eye-plus.svg" width="30" />
+                                    <img src="images/gamma.svg" width="30" />
+                                </div>
+                            </div>
 
-            <div class="card">
-                <p class="project-name">Less Cool Project</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                <img src="images/star-plus.svg" alt="Star Plus image" width="50" height="25">
-                <img src="images/eye-plus.svg" alt="Eye Plus image" width="50" height="25">
-                <img src="images/gamma.svg" alt="Gamma image" width="50" height="25">
-            </div>
+                            <div class="project-card">
+                                <p class="project-name">Impossible App</p>
+                                <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <div class="icons">
+                                    <img src="images/star-plus.svg" width="30" />
+                                    <img src="images/eye-plus.svg" width="30" />
+                                    <img src="images/gamma.svg" width="30" />
+                                </div>
+                            </div>
 
-            <div class="card">
-                <p class="project-name">Impossible App</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                <img src="images/star-plus.svg" alt="Star Plus image" width="50" height="25">
-                <img src="images/eye-plus.svg" alt="Eye Plus image" width="50" height="25">
-                <img src="images/gamma.svg" alt="Gamma image" width="50" height="25">
-            </div>
+                            <div class="project-card">
+                                <p class="project-name">Add Blocker</p>
+                                <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <div class="icons">
+                                    <img src="images/star-plus.svg" width="30" />
+                                    <img src="images/eye-plus.svg" width="30" />
+                                    <img src="images/gamma.svg" width="30" />
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="card">
-                <p class="project-name">Easy Peasy App</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                <img src="images/star-plus.svg" alt="Star Plus image" width="50" height="25">
-                <img src="images/eye-plus.svg" alt="Eye Plus image" width="50" height="25">
-                <img src="images/gamma.svg" alt="Gamma image" width="50" height="25">
-            </div>
+                        <div class="cards-right">
+                            <div class="project-card">
+                                <p class="project-name">Less Cool Project</p>
+                                <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <div class="icons">
+                                    <img src="images/star-plus.svg" width="30" />
+                                    <img src="images/eye-plus.svg" width="30" />
+                                    <img src="images/gamma.svg" width="30" />
+                                </div>
+                            </div>
 
-            <div class="card">
-                <p class="project-name">Add Blocker</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                <img src="images/star-plus.svg" alt="Star Plus image" width="50" height="25">
-                <img src="images/eye-plus.svg" alt="Eye Plus image" width="50" height="25">
-                <img src="images/gamma.svg" alt="Gamma image" width="50" height="25">
-            </div>
+                            <div class="project-card">
+                                <p class="project-name">Easy Peasy App</p>
+                                <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <div class="icons">
+                                    <img src="images/star-plus.svg" width="30" />
+                                    <img src="images/eye-plus.svg" width="30" />
+                                    <img src="images/gamma.svg" width="30" />
+                                </div>
+                            </div>
 
-            <div class="card">
-                <p class="project-name">Monkey Maker</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                <img src="images/star-plus.svg" alt="Star Plus image" width="50" height="25">
-                <img src="images/eye-plus.svg" alt="Eye Plus image" width="50" height="25">
-                <img src="images/gamma.svg" alt="Gamma image" width="50" height="25">
-            </div>
+                            <div class="project-card">
+                                <p class="project-name">Monkey Maker</p>
+                                <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <div class="icons">
+                                    <img src="images/star-plus.svg" width="30" />
+                                    <img src="images/eye-plus.svg" width="30" />
+                                    <img src="images/gamma.svg" width="30" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="projects">
-            <div class="announcements">Announcements</div>
-            <div class="card">
-                <p class="announcement-name">Site Management</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-            </div>
+                    <aside class="cards-wrapper2">
+                        <div class="project-card2">
+                            <p class="announcement-name">Site Management</p>
+                            <p class="announcement-text1">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                                nostrud
+                                exercita...
+                            </p>
 
-            <div class="card">
-                <p class="announcement-name">Community Share Day</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-            </div>
+                            <p class="announcement-name">Community Share Day</p>
+                            <p class="announcement-text2">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                                nostrud
+                                exercita...
+                            </p>
 
-            <div class="card">
-                <p class="announcement-name">Updated Privacy Policy</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-            </div>
+                            <p class="announcement-name">Update Privacy Policy</p>
+                            <p class="announcement-text3">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                                nostrud
+                                exercita...
+                            </p>
+                        </div>
 
-        <div class="projects">
-            <div class="trending">Trending</div>
-            <div class="card">
-                <p class="trending-name">@Loayza</p>
-                <p class="trending-information">World Supported</p>
-            </div>
+                        <div class="title3">Trending</div>
+                        <div class="trending-card">
+                            <div class="trending-list">
+                                <div class="trending-item">
+                                    <img src="images/helicopter.svg" alt="Helicopter" width="40" />
+                                    <div class="trending-text">
+                                        <p class="trending-name">@Sosa</p>
+                                        <p class="trending-description">Super Helper</p>
+                                    </div>
+                                </div>
 
-            <div class="card">
-                <p class="trending-name">@Sosa</p>
-                <p class="trending-information">Super Helper</p>
-            </div>
+                                <div class="trending-item">
+                                    <img src="images/lifebuoy.svg" alt="Life Buoy" width="40" />
+                                    <div class="trending-text">
+                                        <p class="trending-name">@Loayza</p>
+                                        <p class="trending-description">World Support</p>
+                                    </div>
+                                </div>
 
-            <div class="card">
-                <p class="trending-name">@Sosa-Lopez</p>
-                <p class="trending-information">Life Changing Experience</p>
-            </div>
+                                <div class="trending-item">
+                                    <img src="images/stadium.svg" alt="Stadium" width="40" />
+                                    <div class="trending-text">
+                                        <p class="trending-name">@Sosa-Lopez</p>
+                                        <p class="trending-description">Life Changing</p>
+                                    </div>
+                                </div>
 
-            <div class="card">
-                <p class="trending-name">@BIM-Zion</p>
-                <p class="trending-information">No Worries</p>
-            </div>
-        </div>
+                                <div class="trending-item">
+                                    <img src="images/food-hot-dog.svg" alt="Hot-dog" width="40" />
+                                    <div class="trending-text">
+                                        <p class="trending-name">@BIM-Zion</p>
+                                        <p class="trending-description">No Worries</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
 
-        </div>
-        
-        </div>
-
-    </div>
+                </div> <!-- closes dashboard-content -->
+            </div> <!-- closes header -->
+        </main>
+    </div> <!-- closes container -->
 </body>
 
 </html>
