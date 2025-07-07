@@ -47,10 +47,9 @@ This project is a **responsive dashboard layout** built using **HTML** and **CSS
 └── tasks.svg
 
 #### Link 
-
-
+https://sherleysosa2189.github.io/grid/
 
 ##### Preview
 
-![Sign-Up Form Desktop ViewPreview](/images/screenshot.png)  
+![grid Desktop ViewPreview](/images/screenshot.png)  
 
